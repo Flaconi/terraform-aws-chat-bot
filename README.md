@@ -20,13 +20,13 @@ For requirements regarding module structure: [style-guide-terraform.md](https://
 module "chatbot" {
 	source = "github.com/Flaconi/terraform-aws-chat-bot"
 
-	name             = "platform-alerts"
+	name             = "sample-alerts"
 	iam_role_arn     = "arn:aws:iam::123456789012:role/aws-chatbot-role"
 	slack_team_id    = "T00000000"
 	slack_channel_id = "C00000000"
 
 	sns_topic_arns = [
-		"arn:aws:sns:eu-central-1:123456789012:platform-alerts"
+		"arn:aws:sns:eu-central-1:123456789012:sample-alerts"
 	]
 
 	logging_level = "ERROR"
