@@ -73,7 +73,7 @@ Description: IAM role ARN used by AWS Chatbot
 
 Type: `string`
 
-### <a name="input_slack_team_name"></a> [slack\_team\_id](#input\_slack\_team\_name)
+### <a name="input_slack_team_name"></a> [slack\_team\_name](#input\_slack\_team\_name)
 
 Description: Slack workspace (team) name integrated with AWS Chatbot
 
