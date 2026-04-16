@@ -21,7 +21,7 @@ module "chatbot" {
 	configuration_name    = "sample-alerts"
 	guardrail_policy_arns = ["arn:aws:iam::aws:policy/ReadOnlyAccess"]
 	iam_role_arn          = "arn:aws:iam::123456789012:role/aws-chatbot-role"
-	slack_team_id         = "T00000000"
+	slack_team_name       = "sample-slack-workspace"
 	slack_channel_id      = "C00000000"
 
 	sns_topic_arns = [
@@ -73,9 +73,9 @@ Description: IAM role ARN used by AWS Chatbot
 
 Type: `string`
 
-### <a name="input_slack_team_id"></a> [slack\_team\_id](#input\_slack\_team\_id)
+### <a name="input_slack_team_name"></a> [slack\_team\_name](#input\_slack\_team\_name)
 
-Description: Slack workspace (team) ID integrated with AWS Chatbot
+Description: Slack workspace (team) name integrated with AWS Chatbot
 
 Type: `string`
 
