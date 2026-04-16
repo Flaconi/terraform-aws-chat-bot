@@ -1,5 +1,5 @@
 terraform {
-  required_version = "~> 1.3"
+  required_version = ">= 1.3"
 
   required_providers {
     aws = {
@@ -7,4 +7,8 @@ terraform {
       version = ">= 4.0"
     }
   }
+}
+
+provider "aws" {
+  region = "eu-central-1"
 }
