@@ -9,9 +9,9 @@ variable "iam_role_arn" {
   description = "IAM role ARN used by AWS Chatbot"
 }
 
-variable "slack_team_id" {
+variable "slack_team_name" {
   type        = string
-  description = "Slack workspace (team) ID integrated with AWS Chatbot"
+  description = "Slack workspace (team) name integrated with AWS Chatbot"
 }
 
 variable "slack_channel_id" {
